@@ -5,21 +5,21 @@
 class Differing < Formula
   desc "A stand-alone code review tool for reviewing LLM-generated changes"
   homepage "https://github.com/philz/differing"
-  version "0.0.13"
+  version "0.0.14"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/philz/differing/releases/download/v0.0.13/differing_darwin_amd64"
-      sha256 "9036181138ffeb121649739799dd26e14b6896f9712348d1a5762c669186b4c8"
+      url "https://github.com/philz/differing/releases/download/v0.0.14/differing_darwin_amd64"
+      sha256 "9268a22f759472c4c2392dbf9bc3b56674e691d57a08d80dfe059a738f8fd65f"
 
       def install
         bin.install "differing"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/philz/differing/releases/download/v0.0.13/differing_darwin_arm64"
-      sha256 "0809820c7f7a57f2e8fc665132e505d98b3d16461a4e4b15e85b67ddec6219cf"
+      url "https://github.com/philz/differing/releases/download/v0.0.14/differing_darwin_arm64"
+      sha256 "7d0c061257f6f837fc0a2514ae9bd4dd283049547de23f246ae09aa3e8c7e363"
 
       def install
         bin.install "differing"
@@ -29,15 +29,15 @@ class Differing < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/philz/differing/releases/download/v0.0.13/differing_linux_amd64"
-      sha256 "9cc1a9824812a551f67a7cfb4402a0e595f0ea7397a710814c7e387bfc927b8c"
+      url "https://github.com/philz/differing/releases/download/v0.0.14/differing_linux_amd64"
+      sha256 "531c1a453ac52508f95278cd56d4ce5ca513375447d2ec5d92d1e1cdf04514fa"
       def install
         bin.install "differing"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/philz/differing/releases/download/v0.0.13/differing_linux_arm64"
-      sha256 "79d8adbb5bebe68da478e1afda2951019ebb33afa8ff67ebb7e0c27c76923afa"
+      url "https://github.com/philz/differing/releases/download/v0.0.14/differing_linux_arm64"
+      sha256 "6ef79283e8dc4a255d24f088a78f0817f5098df626e6c4d28f71f667d66ee76b"
       def install
         bin.install "differing"
       end
