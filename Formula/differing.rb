@@ -5,21 +5,21 @@
 class Differing < Formula
   desc "A stand-alone code review tool for reviewing LLM-generated changes"
   homepage "https://github.com/philz/differing"
-  version "0.1.0"
+  version "0.0.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/philz/differing/releases/download/v0.1.0/differing_0.1.0_darwin_amd64.tar.gz"
-      sha256 "23ddb209ef813c3565de11547994a2889d67083fbfa8b92639fbee899ab6fae9"
+      url "https://github.com/philz/differing/releases/download/v0.0.9/differing_darwin_amd64"
+      sha256 "779007de22d94510cac4344cd89191ac49ffd3f6ed1b2574e8e20301128e030d"
 
       def install
         bin.install "differing"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/philz/differing/releases/download/v0.1.0/differing_0.1.0_darwin_arm64.tar.gz"
-      sha256 "4603dd7557df78c0a51067e00bcbed33886a75f8c3ab801a3249b05720821980"
+      url "https://github.com/philz/differing/releases/download/v0.0.9/differing_darwin_arm64"
+      sha256 "e339b6fc2f3b3fcf9c4407b633f97c61cda7228255e954ee44d7b819d0c00dfd"
 
       def install
         bin.install "differing"
@@ -29,15 +29,15 @@ class Differing < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/philz/differing/releases/download/v0.1.0/differing_0.1.0_linux_amd64.tar.gz"
-      sha256 "eeae354fbadd1cee3a07bbd9e9cb7f5f00565e1421ee2ee4a1795fff405c4b49"
+      url "https://github.com/philz/differing/releases/download/v0.0.9/differing_linux_amd64"
+      sha256 "3398f056720856ead72ce2ffe1de62122e1761a3c48877c19338533157e58902"
       def install
         bin.install "differing"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/philz/differing/releases/download/v0.1.0/differing_0.1.0_linux_arm64.tar.gz"
-      sha256 "54d63eea716672ee77157b04424a912aa169c52a4fb9d565eeda2f7879c033c3"
+      url "https://github.com/philz/differing/releases/download/v0.0.9/differing_linux_arm64"
+      sha256 "a20d5a025487e9d38c9f5f0a609b02d6eead8f336c7556c30b72309aa7ffe254"
       def install
         bin.install "differing"
       end
